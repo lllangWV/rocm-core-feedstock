@@ -12,28 +12,16 @@ source:
 
 build:
   number: 0
-  skip: not (linux or win)
+  skip: not linux
   script:
-  - if: win
-    then: |
-      cd projects/rocm-core
-      mkdir build
-      cd build
-      cmake -GNinja ^ 
-       -S %CD%.. -B . ^
-      -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
-      -DROCM_VERSION="${{ version }}" 
-      ninja install
-  - if: linux
-    then: |
-      cd projects/rocm-core
-      mkdir build
-      cd build
-      cmake -GNinja \
-      -S $PWD/../ -B . \
-      -DCMAKE_INSTALL_PREFIX=$PREFIX \
-      -DROCM_VERSION="${{ version }}" 
-      ninja install
+    cd projects/rocm-core
+    mkdir build
+    cd build
+    cmake -GNinja \
+    -S $PWD/../ -B . \
+    -DCMAKE_INSTALL_PREFIX=$PREFIX \
+    -DROCM_VERSION="${{ version }}" 
+    ninja install
 
 
 requirements:
