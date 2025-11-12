@@ -3,11 +3,13 @@ About rocm-core-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rocm-core-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ROCm/rocm-core
+Home: https://github.com/ROCm/rocm-systems
 
 Package license: MIT
 
 Summary: ROCm core package
+
+Development: https://github.com/ROCm/rocm-systems/projects/rocm-core
 
 Current build status
 ====================
@@ -31,6 +33,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26511&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rocm-core-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26511&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rocm-core-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
